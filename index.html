@@ -3,33 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SmartRetail - Fresh Groceries</title>
-    <meta name="description" content="Shop fresh groceries at Grow India. Explore quality fruits, vegetables, rice, spices, millets, and everyday essentials at great prices.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SmartRetail – Fresh fruits, vegetables, spices, and millets delivered from farms to your doorstep. Shop fresh groceries online in India.">
+    <meta name="keywords"
+        content="fresh groceries online, buy fruits online India, fresh vegetables, Indian spices online, millets online, grocery store India, SmartRetail">
+    <title>SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- existing meta tags, title, etc. -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Grow India Retail",
+    "@type": "GroceryStore",
+    "name": "SmartRetail",
     "url": "https://growindiaa69.github.io/retail-website",
-    "logo": "https://growindiaa69.github.io/retail-website/assets/logo.png",
-    "image": [
-      "https://growindiaa69.github.io/retail-website/assets/hero.jpg",
-      "https://growindiaa69.github.io/retail-website/assets/storefront.jpg"
-    ],
-    "description": "Grow India is an online grocery store offering fresh fruits, vegetables, rice, spices, millets, and other everyday food essentials at great prices.",
+    "description": "SmartRetail is a smart grocery store offering fresh fruits, vegetables, spices, and millets — sourced directly from farms.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Market Street",
-      "addressLocality": "Mumbai",
-      "addressRegion": "MH",
-      "postalCode": "400001",
+      "addressLocality": "Bangalore",
+      "addressRegion": "KA",
+      "postalCode": "560001",
       "addressCountry": "IN"
     },
-    "telephone": "+91-22-1234-5678",
-    "email": "info@growindiaa69.github.io",
+    "telephone": "+91-80-1234-5678",
+    "email": "growindiaa69@gmail.com",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -53,25 +50,46 @@
         "closes": "18:00"
       }
     ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "SmartRetail Grocery Catalog",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Fruits",
+          "description": "Fresh seasonal fruits sourced directly from farms"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Vegetables",
+          "description": "Farm-fresh vegetables delivered daily"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Spices",
+          "description": "Premium Indian spices and condiments"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Millets",
+          "description": "Nutritious millets and whole grains for a healthy diet"
+        }
+      ]
+    },
     "sameAs": [
-      "https://www.facebook.com/growindia",
-      "https://www.instagram.com/growindia",
-      "https://twitter.com/growindia"
-    ],
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://growindiaa69.github.io/retail-website/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+      "https://github.com/growindiaa69"
+    ]
   }
   </script>
+
 </head>
+
 
 
 <body>
     <!-- NAVBAR -->
     <div class="navbar">
-        <h2>🛒 SmartRetail Grocery store </h2>
+        <h2>🛒 SmartRetail</h2>
         <div class="nav-links">
             <a onclick="showPage('home')">Home</a>
             <a onclick="showPage('products')">Products</a>
@@ -97,6 +115,7 @@
             <div>🌾 Millets</div>
         </div>
     </div>
+
     <!-- LOGIN -->
     <div id="login" class="page auth">
         <h2>Login</h2>
@@ -118,22 +137,22 @@
     </div>
     <!-- PRODUCTS -->
     <div id="products" class="page">
-        <h2 class="center">Our Products</h2>
+        <h2 class="center">Our Fresh Groceries</h2>
         <div class="products">
             <div class="card">
-                <img src="apple.jpg">
+                <img src="apple.jpg" alt="Fresh Apple – buy apples online at SmartRetail">
                 <h4>Apple</h4>
                 <p>₹120 / kg</p>
                 <button onclick="addToCart('Apple',120)">Add to Cart</button>
             </div>
             <div class="card">
-                <img src="rice.jpg">
-                <h4>Rice</h4>
+                <img src="rice.jpg" alt="Foxtail Millet – healthy millet available at SmartRetail">
+                <h4>Foxtail Millet</h4>
                 <p>₹60 / kg</p>
-                <button onclick="addToCart('Rice',60)">Add to Cart</button>
+                <button onclick="addToCart('Foxtail Millet',60)">Add to Cart</button>
             </div>
             <div class="card">
-                <img src="chilli.jpg">
+                <img src="chilli.jpg" alt="Chilli Powder – premium Indian spice at SmartRetail">
                 <h4>Chilli Powder</h4>
                 <p>₹80 / 500g</p>
                 <button onclick="addToCart('Chilli Powder',80)">Add to Cart</button>
@@ -155,10 +174,9 @@
     </div>
     <!-- ABOUT -->
     <div id="about" class="page">
-        <h2>About SmartRetail Grocery Store</h2>
+        <h2>About SmartRetail</h2>
         <p>We deliver fresh groceries directly from farms to your home.</p>
     </div>
-
     <!-- CONTACT -->
     <div id="contact" class="page auth">
         <h2>Contact Us</h2>
@@ -169,10 +187,10 @@
     </div>
     <!-- FOOTER -->
     <footer>
-        <p>📍 SmartRetail Grocery Store | India</p>
-        <p>© 2026 SmartRetail Grocery Store. All Rights Reserved</p>
+        <p>📍 SmartRetail | India</p>
+        <p>© 2026 SmartRetail. All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
