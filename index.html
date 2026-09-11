@@ -3,7 +3,187 @@
 <html lang="en">
 
 <head>
-   
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://growindiaa69.github.io/#organization",
+      "name": "SmartRetail",
+      "url": "https://growindiaa69.github.io",
+      "logo": "https://growindiaa69.github.io/logo.png",
+      "image": "https://growindiaa69.github.io/logo.png",
+      "description": "SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets",
+      "knowsAbout": [
+        "SmartRetail",
+        "Groceries & Fresh Produce"
+      ]
+    },
+    {
+      "@type": [
+        "GroceryStore",
+        "OnlineStore"
+      ],
+      "@id": "https://growindiaa69.github.io/#store",
+      "name": "SmartRetail",
+      "url": "https://growindiaa69.github.io",
+      "description": "SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets",
+      "currenciesAccepted": "INR",
+      "priceRange": "₹",
+      "parentOrganization": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://growindiaa69.github.io/#catalog",
+        "name": "SmartRetail Fresh Catalog",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://growindiaa69.github.io/#product-1"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://growindiaa69.github.io/#product-2"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://growindiaa69.github.io/#product-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://growindiaa69.github.io/#product-1",
+      "name": "Apple",
+      "image": "https://growindiaa69.github.io/retail-website/apple.jpg",
+      "description": "Fresh Apple – buy apples online at SmartRetail",
+      "sku": "SMARTRETAIL-1",
+      "brand": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://growindiaa69.github.io/retail-website#apple",
+        "price": "120",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "2027-12-31",
+        "seller": {
+          "@id": "https://growindiaa69.github.io/#store"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://growindiaa69.github.io/#product-2",
+      "name": "Foxtail Millet",
+      "image": "https://growindiaa69.github.io/retail-website/rice.jpg",
+      "description": "Foxtail Millet – healthy millet available at SmartRetail",
+      "sku": "SMARTRETAIL-2",
+      "brand": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://growindiaa69.github.io/retail-website#foxtail-millet",
+        "price": "60",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "2027-12-31",
+        "seller": {
+          "@id": "https://growindiaa69.github.io/#store"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://growindiaa69.github.io/#product-3",
+      "name": "Chilli Powder",
+      "image": "https://growindiaa69.github.io/retail-website/chilli.jpg",
+      "description": "Chilli Powder – premium Indian spice at SmartRetail",
+      "sku": "SMARTRETAIL-3",
+      "brand": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://growindiaa69.github.io/retail-website#chilli-powder",
+        "price": "80",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "2027-12-31",
+        "seller": {
+          "@id": "https://growindiaa69.github.io/#store"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://growindiaa69.github.io/#website",
+      "url": "https://growindiaa69.github.io",
+      "name": "SmartRetail",
+      "publisher": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://growindiaa69.github.io/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://growindiaa69.github.io/retail-website/#webpage",
+      "url": "https://growindiaa69.github.io/retail-website",
+      "name": "SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets",
+      "description": "SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets",
+      "primaryImageOfPage": "https://growindiaa69.github.io/logo.png",
+      "breadcrumb": {
+        "@id": "https://growindiaa69.github.io/retail-website/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "https://growindiaa69.github.io/#website"
+      },
+      "about": {
+        "@id": "https://growindiaa69.github.io/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://growindiaa69.github.io/retail-website/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://growindiaa69.github.io"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SmartRetail",
+          "item": "https://growindiaa69.github.io/retail-website"
+        }
+      ]
+    }
+  ]
+}
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
