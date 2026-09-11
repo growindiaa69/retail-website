@@ -1,196 +1,297 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
         content="SmartRetail – Fresh fruits, vegetables, spices, and millets delivered from farms to your doorstep. Shop fresh groceries online in India.">
+
     <meta name="keywords"
         content="fresh groceries online, buy fruits online India, fresh vegetables, Indian spices online, millets online, grocery store India, SmartRetail">
-    <title>SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "GroceryStore",
-    "name": "SmartRetail",
-    "url": "https://growindiaa69.github.io/retail-website",
-    "description": "SmartRetail is a smart grocery store offering fresh fruits, vegetables, spices, and millets — sourced directly from farms.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Market Street",
-      "addressLocality": "Bangalore",
-      "addressRegion": "KA",
-      "postalCode": "560001",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-80-1234-5678",
-    "email": "growindiaa69@gmail.com",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "20:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "10:00",
-        "closes": "18:00"
-      }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "SmartRetail Grocery Catalog",
-      "itemListElement": [
-        {
-          "@type": "OfferCatalog",
-          "name": "Fruits",
-          "description": "Fresh seasonal fruits sourced directly from farms"
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Vegetables",
-          "description": "Farm-fresh vegetables delivered daily"
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Spices",
-          "description": "Premium Indian spices and condiments"
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Millets",
-          "description": "Nutritious millets and whole grains for a healthy diet"
-        }
-      ]
-    },
-    "sameAs": [
-      "https://github.com/growindiaa69"
-    ]
-  }
-  </script>
 
+    <title>SmartRetail – Fresh Groceries Online | Fruits, Vegetables, Spices & Millets</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
+
     <!-- NAVBAR -->
     <div class="navbar">
         <h2>🛒 SmartRetail</h2>
+
         <div class="nav-links">
             <a onclick="showPage('home')">Home</a>
             <a onclick="showPage('products')">Products</a>
             <a onclick="showPage('cart')">Cart</a>
             <a onclick="showPage('about')">About</a>
             <a onclick="showPage('contact')">Contact</a>
-            <a id="loginLink" onclick="showPage('login')" class="btn-outline">Login</a>
-            <a id="logoutBtn" onclick="logout()" style="display:none;" class="btn-outline">Logout</a>
+
+            <a id="loginLink"
+                onclick="showPage('login')"
+                class="btn-outline">
+                Login
+            </a>
+
+            <a id="logoutBtn"
+                onclick="logout()"
+                style="display:none;"
+                class="btn-outline">
+                Logout
+            </a>
         </div>
     </div>
+
+
     <!-- HOME -->
     <div id="home" class="page active">
+
         <div class="hero">
             <h1>Fresh Groceries Delivered Fast</h1>
-            <p>Quality food • Best prices • Trusted service</p>
-            <button onclick="showPage('products')">Shop Now</button>
+
+            <p>
+                Quality food • Best prices • Trusted service
+            </p>
+
+            <button onclick="showPage('products')">
+                Shop Now
+            </button>
         </div>
-        <h2 class="center">Popular Categories</h2>
+
+        <h2 class="center">
+            Popular Categories
+        </h2>
+
         <div class="category">
             <div>🍎 Fruits</div>
             <div>🥦 Vegetables</div>
             <div>🌶 Spices</div>
             <div>🌾 Millets</div>
         </div>
+
     </div>
+
 
     <!-- LOGIN -->
     <div id="login" class="page auth">
+
         <h2>Login</h2>
-        <input id="lemail" placeholder="Email">
-        <input id="lpass" type="password" placeholder="Password">
-        <button onclick="login()">Login</button>
+
+        <input
+            id="lemail"
+            placeholder="Email">
+
+        <input
+            id="lpass"
+            type="password"
+            placeholder="Password">
+
+        <button onclick="login()">
+            Login
+        </button>
+
         <p id="lmsg"></p>
-        <p class="link" onclick="showPage('signup')">Create an account</p>
+
+        <p
+            class="link"
+            onclick="showPage('signup')">
+            Create an account
+        </p>
+
     </div>
+
+
     <!-- SIGNUP -->
     <div id="signup" class="page auth">
+
         <h2>Create Account</h2>
-        <input id="sname" placeholder="Full Name">
-        <input id="semail" placeholder="Email">
-        <input id="spass" type="password" placeholder="Password">
-        <input id="scpass" type="password" placeholder="Confirm Password">
-        <button onclick="signup()">Signup</button>
+
+        <input
+            id="sname"
+            placeholder="Full Name">
+
+        <input
+            id="semail"
+            placeholder="Email">
+
+        <input
+            id="spass"
+            type="password"
+            placeholder="Password">
+
+        <input
+            id="scpass"
+            type="password"
+            placeholder="Confirm Password">
+
+        <button onclick="signup()">
+            Signup
+        </button>
+
         <p id="smsg"></p>
+
     </div>
+
+
     <!-- PRODUCTS -->
     <div id="products" class="page">
-        <h2 class="center">Our Fresh Groceries</h2>
+
+        <h2 class="center">
+            Our Fresh Groceries
+        </h2>
+
         <div class="products">
+
             <div class="card">
-                <img src="apple.jpg" alt="Fresh Apple – buy apples online at SmartRetail">
+
+                <img
+                    src="apple.jpg"
+                    alt="Fresh Apple – buy apples online at SmartRetail">
+
                 <h4>Apple</h4>
-                <p>₹120 / kg</p>
-                <button onclick="addToCart('Apple',120)">Add to Cart</button>
+
+                <p>
+                    ₹120 / kg
+                </p>
+
+                <button
+                    onclick="addToCart('Apple',120)">
+                    Add to Cart
+                </button>
+
             </div>
+
+
             <div class="card">
-                <img src="rice.jpg" alt="Foxtail Millet – healthy millet available at SmartRetail">
+
+                <img
+                    src="rice.jpg"
+                    alt="Foxtail Millet – healthy millet available at SmartRetail">
+
                 <h4>Foxtail Millet</h4>
-                <p>₹60 / kg</p>
-                <button onclick="addToCart('Foxtail Millet',60)">Add to Cart</button>
+
+                <p>
+                    ₹60 / kg
+                </p>
+
+                <button
+                    onclick="addToCart('Foxtail Millet',60)">
+                    Add to Cart
+                </button>
+
             </div>
+
+
             <div class="card">
-                <img src="chilli.jpg" alt="Chilli Powder – premium Indian spice at SmartRetail">
+
+                <img
+                    src="chilli.jpg"
+                    alt="Chilli Powder – premium Indian spice at SmartRetail">
+
                 <h4>Chilli Powder</h4>
-                <p>₹80 / 500g</p>
-                <button onclick="addToCart('Chilli Powder',80)">Add to Cart</button>
+
+                <p>
+                    ₹80 / 500g
+                </p>
+
+                <button
+                    onclick="addToCart('Chilli Powder',80)">
+                    Add to Cart
+                </button>
+
             </div>
+
         </div>
+
     </div>
+
+
     <!-- CART -->
     <div id="cart" class="page">
+
         <h2>Your Cart</h2>
-        <div id="cartItems" class="cart-box"></div>
+
+        <div
+            id="cartItems"
+            class="cart-box">
+        </div>
+
         <h3 id="total"></h3>
-        <button onclick="showPage('checkout')">Proceed to Checkout</button>
+
+        <button onclick="showPage('checkout')">
+            Proceed to Checkout
+        </button>
+
     </div>
+
+
     <!-- CHECKOUT -->
     <div id="checkout" class="page auth">
+
         <h2>Order Summary</h2>
+
         <p id="bill"></p>
+
         <!-- <button onclick="window.print()">Print Bill</button> -->
+
     </div>
+
+
     <!-- ABOUT -->
     <div id="about" class="page">
+
         <h2>About SmartRetail</h2>
-        <p>We deliver fresh groceries directly from farms to your home.</p>
+
+        <p>
+            We deliver fresh groceries directly from farms to your home.
+        </p>
+
     </div>
+
+
     <!-- CONTACT -->
     <div id="contact" class="page auth">
+
         <h2>Contact Us</h2>
-        <input placeholder="Name">
-        <input placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button onclick="alert('Message Sent Successfully')">Submit</button>
+
+        <input
+            placeholder="Name">
+
+        <input
+            placeholder="Email">
+
+        <textarea
+            placeholder="Message">
+        </textarea>
+
+        <button
+            onclick="alert('Message Sent Successfully')">
+            Submit
+        </button>
+
     </div>
+
+
     <!-- FOOTER -->
     <footer>
-        <p>📍 SmartRetail | India</p>
-        <p>© 2026 SmartRetail. All Rights Reserved</p>
+
+        <p>
+            📍 SmartRetail | India
+        </p>
+
+        <p>
+            © 2026 SmartRetail. All Rights Reserved
+        </p>
+
     </footer>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
+```
